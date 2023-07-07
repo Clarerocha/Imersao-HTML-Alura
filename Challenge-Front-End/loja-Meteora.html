@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteora Store</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="Style/style.css" media="all">
+    <link rel="stylesheet" href="style/media-query.css">
+</head>
+<body>
+
+    <main>
+        <header id="cabecalho">
+            <nav id="navbar">
+
+                <div id="logo">
+                    <img id="phone" src="../Mobile/Logo mobile.png" alt="Acessando via smartphone">
+                    <img id="tablet" src="../Tablet/Logo tablet.png" alt="Acessando via tablet">
+                    <img id="pc" src="../Desktop/Logo desktop.png" alt="Acessando via desktop">
+                </div>
+
+                <div class="burguer_box">
+                    <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+                </div>  
+                
+                    <div id="cabecalho_menus"> 
+                        
+                            <ul id="links_menus"> 
+                        
+                                <li class="home"><a>Home</a></li>
+                                <li class="lojas"><a>Nossas lojas</a></li>
+                                <li class="novidades"><a>Novidades</a></li>
+                                <li class="promocao"><a>Promoções</a></li>
+                            </ul>
+                    </div>  
+                
+                    <div class="buscar">
+                            <form action="#" method="post">
+                            <input type="search" name="buscar" id="buscar" placeholder="Digite o Produto" required>
+                            <button type="submit">Buscar</button></form>
+                    </div>
+
+            </nav>
+        </header>
+
+        <script>
+            function clickMenu() {
+                            
+                var cabecalho_menus = document.getElementById ('cabecalho_menus')
+                if (cabecalho_menus.style.display == "block"){
+                    cabecalho_menus.style.display = 'none'
+                } else {
+                    cabecalho_menus.style.display = 'block'
+                }
+
+            }
+
+        </script>
+    </main>
+</body>
+</html>
